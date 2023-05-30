@@ -1,0 +1,17 @@
+name: load testing
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  load:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.1.0
+
+      - run: npm install -g artillery@latest
+      - run: artillery dino
+
+      # need add load tests when web page will be available

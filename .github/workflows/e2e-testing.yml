@@ -1,0 +1,23 @@
+name: e2e testing
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.1.0
+
+      - run: npm install -g pnpm
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm run build
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          start: pnpm run start
+          wait-on: 'http://localhost:3000'
+          browser: chrome

@@ -1,0 +1,18 @@
+name: static testing
+on:
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.1.0
+
+      - run: npm install -g pnpm
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm run lint:next
+      - run: pnpm run lint:tsc
+      - run: pnpm run lint:markdown
