@@ -20,7 +20,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-dependencies-
 
-      - run: npm install artillery@latest
+      - run: npm install -g artillery@latest
         if: |
           steps.cache-npm-dependencies.outputs.cache-hit != 'true'
       - run: artillery dino
