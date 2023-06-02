@@ -29,12 +29,23 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-
 
+      - name: Cache pnpm build
+        id: cache-pnpm-build
+        uses: actions/cache@v3
+        with:
+          path: .next
+          key: ${{ runner.os }}-next-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-next-
+
       - run: npm install -g pnpm
       - run: pnpm i --frozen-lockfile
         if: |
           steps.cache-pnpm-dependencies.outputs.cache-hit != 'true' ||
           steps.cache-pnpm-packages.outputs.cache-hit != 'true'
       - run: pnpm run build
+        if: |
+          steps.cache-pnpm-build.outputs.cache-hit != 'true'
 
       - name: Cypress run
         uses: cypress-io/github-action@v5
