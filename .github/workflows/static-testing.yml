@@ -6,8 +6,11 @@ jobs:
   static:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 20.1.0
 
@@ -29,11 +32,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-
 
-      - run: npm install -g pnpm
-      - run: pnpm i --frozen-lockfile
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
         if: |
           steps.cache-pnpm-dependencies.outputs.cache-hit != 'true' ||
           steps.cache-pnpm-packages.outputs.cache-hit != 'true'
-      - run: pnpm run lint:next
-      - run: pnpm run lint:tsc
-      - run: pnpm run lint:markdown
+
+      - name: Run next linter
+        run: pnpm run lint:next
+
+      - name: Run tsc linter
+        run: pnpm run lint:tsc
+
+      - name: Run markdown linter
+        run: pnpm run lint:markdown

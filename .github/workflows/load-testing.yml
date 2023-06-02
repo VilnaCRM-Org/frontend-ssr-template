@@ -1,13 +1,19 @@
 name: load testing
+
 on:
   pull_request:
     branches: [ "main" ]
+
 jobs:
   load:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: 20.1.0
 
@@ -20,9 +26,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-dependencies-
 
-      - run: npm install -g artillery@latest
-        if: |
-          steps.cache-npm-dependencies.outputs.cache-hit != 'true'
-      - run: artillery dino
+      - name: Install Artillery
+        run: npm install -g artillery@latest
+        if: steps.cache-npm-dependencies.outputs.cache-hit != 'true'
+
+      - name: Start Artillery
+        run: artillery dino
 
       # need add load tests when web page will be available
