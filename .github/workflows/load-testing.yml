@@ -12,7 +12,7 @@ jobs:
           node-version: 20.1.0
 
       - name: Cache pnpm dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             node_modules
@@ -21,7 +21,7 @@ jobs:
             ${{ runner.os }}-dependencies-
 
       - name: Cache pnpm packages
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
