@@ -11,11 +11,22 @@ jobs:
         with:
           node-version: 20.1.0
 
-      - name: Cache pnpm modules
+      - name: Cache pnpm dependencies
         uses: actions/cache@v2
         with:
-          path: node_modules
+          path: |
+            node_modules
+          key: ${{ runner.os }}-dependencies-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-dependencies-
+
+      - name: Cache pnpm packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
           key: ${{ runner.os }}-pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
       - run: npm install -g artillery@latest
       - run: artillery dino
