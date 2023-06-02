@@ -11,25 +11,18 @@ jobs:
         with:
           node-version: 20.1.0
 
-      - name: Cache pnpm dependencies
-        id: cache-pnpm-dependencies
+      - name: Cache npm dependencies
+        id: cache-npm-dependencies
         uses: actions/cache@v3
         with:
           path: node_modules
-          key: ${{ runner.os }}-dependencies-${{ hashFiles('**/pnpm-lock.yaml') }}
+          key: ${{ runner.os }}-npm-dependencies-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-dependencies-
+            ${{ runner.os }}-npm-dependencies-
 
-      - name: Cache pnpm packages
-        id: cache-pnpm-packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
-      - run: npm install -g artillery@latest
+      - run: npm install artillery@latest
+        if: |
+          steps.cache-npm-dependencies.outputs.cache-hit != 'true'
       - run: artillery dino
 
       # need add load tests when web page will be available
