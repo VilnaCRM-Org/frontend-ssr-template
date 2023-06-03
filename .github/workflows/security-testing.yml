@@ -22,6 +22,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Cache CodeQL databases
+        uses: actions/cache@v3
+        with:
+          path: ${{ runner.workspace }}/codeql_databases
+          key: ${{ runner.os }}-codeql-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-codeql-
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
