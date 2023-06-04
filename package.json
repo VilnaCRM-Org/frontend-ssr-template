@@ -1,5 +1,5 @@
 {
-  "name": "website",
+  "name": "frontend-ssr-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -36,6 +36,7 @@
     "react-i18next": "^12.3.1",
     "require-from-string": "^2.0.2",
     "storybook": "^6.5.13",
+    "web-vitals": "^3.3.2",
     "webpack": "^5.84.1"
   },
   "devDependencies": {

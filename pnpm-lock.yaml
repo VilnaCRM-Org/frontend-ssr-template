@@ -49,6 +49,9 @@ dependencies:
   storybook:
     specifier: ^6.5.13
     version: 6.5.13(eslint@8.28.0)(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.3)
+  web-vitals:
+    specifier: ^3.3.2
+    version: 3.3.2
   webpack:
     specifier: ^5.84.1
     version: 5.84.1
@@ -15866,6 +15869,10 @@ packages:
 
   /web-namespaces@1.1.4:
     resolution: {integrity: sha512-wYxSGajtmoP4WxfejAPIr4l0fVh+jeMXZb08wNc0tMg6xsfZXj3cECqIK0G7ZAqUq0PP8WlMDtaOGVBTAWztNw==}
+
+  /web-vitals@3.3.2:
+    resolution: {integrity: sha512-qRkpmSeKfEWAzNhtX541xA8gCJ+pqCqBmUlDVkVDSCSYUvfvNqF+k9g8I+uyreRcDBdfiJrd0/aLbTy5ydo49Q==}
+    dev: false
 
   /webidl-conversions@3.0.1:
     resolution: {integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==}
