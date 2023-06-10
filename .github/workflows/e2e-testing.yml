@@ -26,15 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-dependencies-
 
-      - name: Cache pnpm packages
-        id: cache-pnpm-packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-
-
       - name: Cache pnpm build
         id: cache-pnpm-build
         uses: actions/cache@v3
