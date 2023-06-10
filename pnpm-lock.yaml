@@ -46,12 +46,18 @@ dependencies:
   react-i18next:
     specifier: ^12.3.1
     version: 12.3.1(i18next@22.5.0)(react-dom@18.2.0)(react@18.2.0)
+  reflect-metadata:
+    specifier: ^0.1.13
+    version: 0.1.13
   require-from-string:
     specifier: ^2.0.2
     version: 2.0.2
   storybook:
     specifier: ^6.5.13
     version: 6.5.13(eslint@8.28.0)(react-dom@18.2.0)(react@18.2.0)(typescript@4.9.3)
+  tsyringe:
+    specifier: ^4.7.0
+    version: 4.7.0
   web-vitals:
     specifier: ^3.3.2
     version: 3.3.2
@@ -13827,6 +13833,10 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
+  /reflect-metadata@0.1.13:
+    resolution: {integrity: sha512-Ts1Y/anZELhSsjMcU605fU9RE4Oi3p5ORujwbIKXfWa+0Zxs510Qrmrce5/Jowq3cHSZSJqBjypxmHarc+vEWg==}
+    dev: false
+
   /regenerate-unicode-properties@10.1.0:
     resolution: {integrity: sha512-d1VudCLoIGitcU/hEg2QqvyGZQmdC0Lf8BqdOMXGFSvJP4bNV1+XqbPQeHHLD51Jh4QJJ225dlIFvY4Ly6MXmQ==}
     engines: {node: '>=4'}
@@ -15455,6 +15465,13 @@ packages:
       tslib: 1.14.1
       typescript: 4.9.3
     dev: true
+
+  /tsyringe@4.7.0:
+    resolution: {integrity: sha512-ncFDM1jTLsok4ejMvSW5jN1VGPQD48y2tfAR0pdptWRKYX4bkbqPt92k7KJ5RFJ1KV36JEs/+TMh7I6OUgj74g==}
+    engines: {node: '>= 6.0.0'}
+    dependencies:
+      tslib: 1.14.1
+    dev: false
 
   /tty-browserify@0.0.0:
     resolution: {integrity: sha512-JVa5ijo+j/sOoHGjw0sxw734b1LhBkQ3bvUGNdxnVXDCX81Yx7TFgnZygxrIIWn23hbfTaMYLwRmAxFyDuFmIw==}
