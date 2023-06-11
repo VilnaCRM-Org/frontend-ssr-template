@@ -26,14 +26,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-dependencies-
 
-#      - name: Cache pnpm build
-#        id: cache-pnpm-build
-#        uses: actions/cache@v3
-#        with:
-#          path: .next
-#          key: ${{ runner.os }}-next-${{ hashFiles('**/pnpm-lock.yaml') }}
-#          restore-keys: |
-#            ${{ runner.os }}-next-
+      - name: Cache pnpm build
+        id: cache-pnpm-build
+        uses: actions/cache@v3
+        with:
+          path: .next
+          key: ${{ runner.os }}-next-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-next-
 
       - name: Install pnpm
         run: npm install -g pnpm
@@ -51,7 +51,6 @@ jobs:
 
       - name: Run dev
         run: |
-          pnpm run dev && npx wait-on http://127.0.0.1:3000
-          memlab run -v --scenario test-google-maps.js
+          pnpm run dev && memlab run -v --scenario test-google-maps.js
         env:
           CI: true
