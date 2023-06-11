@@ -22,12 +22,12 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-npm-
 
       - name: Install Artillery
-        run: npm install -g artillery@latest
+        run: npm install artillery@latest
         if: steps.cache-artillery.outputs.cache-hit != 'true'
 
       - name: Execute load tests
