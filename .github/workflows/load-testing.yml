@@ -17,8 +17,18 @@ jobs:
         with:
           node-version: 20.1.0
 
+      - name: Cache Artillery
+        id: cache-artillery
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
       - name: Install Artillery
         run: npm install -g artillery@latest
+        if: steps.cache-artillery.outputs.cache-hit != 'true'
 
       - name: Execute load tests
-        run: TARGET_URL=http://example.com artillery run --output .github/artillery/report.json artillery/*.yml
+        run: TARGET_URL=http://example.com artillery run artillery/*.yml
