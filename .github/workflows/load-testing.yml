@@ -21,4 +21,4 @@ jobs:
         run: npm install -g artillery@latest
 
       - name: Execute load tests
-        run: TARGET_URL=http://example.com artillery run --output reports/report.json artillery/*.yml
+        run: TARGET_URL=http://example.com artillery run --output .github/artillery/report.json artillery/*.yml
