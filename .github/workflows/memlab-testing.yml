@@ -51,6 +51,6 @@ jobs:
 
       - name: Run dev
         run: |
-          pnpm run dev && memlab run -v --scenario test-google-maps.js
+          pnpm run dev & memlab run -v --scenario test-google-maps.js
         env:
           CI: true
