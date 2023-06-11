@@ -1,11 +1,11 @@
-name: memlab testing
+name: memory leak testing
 
 on:
   pull_request:
     branches: [ "main" ]
 
 jobs:
-  e2e:
+  memory-leak-testing:
     runs-on: ubuntu-latest
 
     steps:
@@ -26,15 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-dependencies-
 
-      - name: Cache pnpm build
-        id: cache-pnpm-build
-        uses: actions/cache@v3
-        with:
-          path: .next
-          key: ${{ runner.os }}-next-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-next-
-
       - name: Install pnpm
         run: npm install -g pnpm
 
@@ -47,13 +38,8 @@ jobs:
           steps.cache-pnpm-dependencies.outputs.cache-hit != 'true' ||
           steps.cache-pnpm-packages.outputs.cache-hit != 'true'
 
-      - name: Build
-        run: pnpm run build
-        if: |
-          steps.cache-pnpm-build.outputs.cache-hit != 'true'
-
       - name: Run dev
         run: |
-          pnpm run dev & memlab run -v --scenario test-google-maps.js
+          pnpm run dev & memlab run -v --scenario ./memlab/memoryLeakTest.js
         env:
           CI: true

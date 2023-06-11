@@ -16,6 +16,7 @@
     "test:e2e": "cypress run --headless --browser chrome",
     "test:e2e:local": "cypress open",
     "test:unit": "jest --verbose ./src/test/unit",
+    "test:memory-leak": "memlab run -v --scenario ./memlab/memoryLeakTest.js",
     "lighthouse:desktop": "next build && next export && lhci autorun --config=lighthouserc.desktop.js",
     "lighthouse:mobile": "next build && next export && lhci autorun --config=lighthouserc.mobile.js"
   },
