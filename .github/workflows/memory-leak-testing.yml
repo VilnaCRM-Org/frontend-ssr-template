@@ -38,7 +38,7 @@ jobs:
           steps.cache-pnpm-dependencies.outputs.cache-hit != 'true' ||
           steps.cache-pnpm-packages.outputs.cache-hit != 'true'
 
-      - name: Run dev
+      - name: Run dev and memory leak testing
         run: |
           pnpm run dev & memlab run -v --scenario ./memlab/memoryLeakTest.js
         env:
