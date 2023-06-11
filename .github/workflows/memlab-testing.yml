@@ -38,6 +38,9 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
+      - name: Install memlab
+        run: npm install -g memlab
+
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
         if: |
