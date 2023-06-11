@@ -7,7 +7,7 @@ config:
     default:
       TARGET_URL: http://example.com
 
-    scenarios:
+scenarios:
   - name: "Emit an event"
     engine: "socketio"
     flow:
