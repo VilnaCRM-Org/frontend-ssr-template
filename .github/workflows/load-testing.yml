@@ -17,20 +17,8 @@ jobs:
         with:
           node-version: 20.1.0
 
-      - name: Cache npm dependencies
-        id: cache-npm-dependencies
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-npm-dependencies-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-dependencies-
-
       - name: Install Artillery
         run: npm install -g artillery@latest
-        if: steps.cache-npm-dependencies.outputs.cache-hit != 'true'
 
-      - name: Start Artillery
-        run: artillery dino
-
-      # need add load tests when web page will be available
+      - name: Execute load tests
+        run: TARGET_URL=http://example.com artillery run --output reports/report.json artillery/*.yml
