@@ -1,4 +1,4 @@
-name: e2e testing
+name: memlab testing
 
 on:
   pull_request:
@@ -52,12 +52,6 @@ jobs:
       - name: Run dev
         run: |
           pnpm run dev && npx wait-on http://127.0.0.1:3000
-        env:
-          CI: true
-
-      - name: Run Memlab
-        run: |
           memlab run -v --scenario test-google-maps.js
         env:
           CI: true
-
