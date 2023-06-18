@@ -15,10 +15,10 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 20.1.0
+          node-version: ${{ vars.NODE_VERSION }}
 
       - name: Install Artillery
         run: npm install -g artillery@latest
 
       - name: Execute load tests
-        run: TARGET_URL=http://example.com artillery run artillery/*.yml
+        run: TARGET_URL=${{ vars.WEBSITE_URL }} artillery run artillery/*.yml

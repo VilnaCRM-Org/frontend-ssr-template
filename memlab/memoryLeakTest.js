@@ -1,5 +1,7 @@
+require('dotenv').config();
+
 function url() {
-  return 'http://localhost:3000/';
+  return process.env.WEBSITE_URL;
 }
 
 async function action(page) {
@@ -10,4 +12,4 @@ async function back(page) {
   await page.click('button');
 }
 
-module.exports = {action, back, url};
+module.exports = { action, back, url };

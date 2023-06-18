@@ -4,8 +4,9 @@ module.exports = {
   testEnvironment: 'node',
   clearMocks: true,
   collectCoverage: true,
-  coverageDirectory: "coverage",
+  coverageDirectory: 'coverage',
   roots: [
-    "./src/test/unit"
+    './src/test/unit',
+    './scripts/test/unit',
   ],
 };

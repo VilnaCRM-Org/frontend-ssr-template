@@ -1,15 +1,12 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import localization from './pages/i18n/localization.json';
 
 i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: {
-        translation: {
-          hello: 'hello',
-        },
-      },
+      localization,
     },
     lng: 'en',
     interpolation: {

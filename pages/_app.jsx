@@ -2,12 +2,13 @@ import '../styles/globals.css';
 import React, { useEffect } from 'react';
 import * as Sentry from '@sentry/react';
 import i18n from '../i18n';
+import 'dotenv/config';
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN_KEY,
   integrations: [
     new Sentry.BrowserTracing({
-      tracePropagationTargets: ['localhost', /^https:\/\/yourserver\.io\/api/],
+      tracePropagationTargets: [process.env.LOCALHOST, /^https:\/\/yourserver\.io\/api/],
     }),
     new Sentry.Replay(),
   ],

@@ -1,6 +1,6 @@
 describe('test', () => {
   it('first test', () => {
-    cy.visit('http://localhost:3000');
+    cy.visit(Cypress.env('WEBSITE_URL'));
     expect(true).to.equal(true);
   })
 })
