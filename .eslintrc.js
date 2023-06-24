@@ -3,6 +3,7 @@ module.exports = {
   env: {
     node: true,
     es6: true,
+    jest: true,
   },
   parserOptions: { ecmaVersion: 8, sourceType: 'module' },
   ignorePatterns: ['node_modules/*', 'docker-compose.yml', 'pnpm-lock.yaml'],
@@ -16,7 +17,12 @@ module.exports = {
   ],
   overrides: [
     {
-      files: ['**/*.ts', '**/*.tsx'],
+      files: [
+        '**/*.ts',
+        '**/*.tsx',
+        '**/*.spec.js',
+        '**/*.spec.jsx',
+      ],
       parser: '@typescript-eslint/parser',
       settings: {
         react: { version: 'detect' },
@@ -77,6 +83,7 @@ module.exports = {
         '@typescript-eslint/explicit-module-boundary-types': ['off'],
         '@typescript-eslint/no-empty-function': ['off'],
         '@typescript-eslint/no-explicit-any': ['off'],
+        '@typescript-eslint/no-var-requires': ['off'],
       },
     },
   ],

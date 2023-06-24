@@ -96,10 +96,8 @@ class LocalizationGenerator {
   writeLocalizationFile(fileContent, filePath) {
     fs.writeFile(filePath, fileContent, (err) => {
       if (err) {
-        console.error(err);
-        return;
+        throw new Error(err);
       }
-      console.log('Localization file created and data written successfully.');
     });
   }
 }

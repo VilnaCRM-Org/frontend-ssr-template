@@ -27,7 +27,7 @@
   "include": [
     "./src",
     "./pages",
-    ".eslintrc.js"
+    "./scripts",
   ],
   "exclude": [
     "node_modules",

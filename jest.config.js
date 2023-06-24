@@ -7,5 +7,6 @@ module.exports = {
   coverageDirectory: 'coverage',
   roots: [
     './src/test/unit',
+    './scripts/test/unit',
   ],
 };
