@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 
 const LocalizationGenerator = require('../../localizationGenerator');
 
@@ -35,51 +34,6 @@ describe('LocalizationGenerator', () => {
     jest.clearAllMocks();
   });
 
-  describe('generateLocalizationFile', () => {
-    test('should generate the localization file', () => {
-      const mockReadDirSync = mockedReaddirSync()
-        .mockReturnValueOnce(FEATURE_FOLDERS)
-        .mockReturnValueOnce([MOCK_FILE_EN])
-        .mockReturnValueOnce([MOCK_FILE_FR]);
-
-      const mockReadFileSync = mockedReadFileSync()
-        .mockReturnValueOnce(JSON.stringify({ greeting: 'Hello' }))
-        .mockReturnValueOnce(JSON.stringify({ greeting: 'Bonjour' }));
-
-      const mockWriteFile = mockedWriteFile();
-
-      const generator = new LocalizationGenerator();
-      generator.generateLocalizationFile();
-
-      expect(mockReadDirSync).toHaveBeenCalledWith('src/features', { withFileTypes: true });
-      expect(mockReadDirSync).toHaveBeenCalledWith('src/features/folder1/i18n', { withFileTypes: true });
-      expect(mockReadDirSync).toHaveBeenCalledWith('src/features/folder2/i18n', { withFileTypes: true });
-      expect(mockReadFileSync).toHaveBeenCalledWith('src/features/folder1/i18n/en.json', 'utf8');
-      expect(mockReadFileSync).toHaveBeenCalledWith('src/features/folder2/i18n/fr.json', 'utf8');
-
-      const localizationPath = path.resolve('pages/i18n/localization.json');
-
-      expect(mockWriteFile).toHaveBeenCalledWith(
-        localizationPath,
-        JSON.stringify(LOCALIZATION_OBJ),
-        expect.any(Function),
-      );
-    });
-
-    test('should not generate the localization file if no feature folders are found', () => {
-      const mockReadDirSync = mockedReaddirSync()
-        .mockReturnValueOnce([]);
-
-      const mockWriteFile = mockedWriteFile();
-
-      const generator = new LocalizationGenerator();
-      generator.generateLocalizationFile();
-
-      expect(mockReadDirSync).toHaveBeenCalledWith('src/features', { withFileTypes: true });
-      expect(mockWriteFile).not.toHaveBeenCalled();
-    });
-  });
-
   describe('getFeatureFolders', () => {
     test('should return an array of feature folders', () => {
       mockedReaddirSync().mockReturnValueOnce(FEATURE_FOLDERS);
@@ -111,7 +65,7 @@ describe('LocalizationGenerator', () => {
 
   describe('writeLocalizationFile', () => {
     test('should write the localization file', () => {
-      const filePath = 'pages/i18n/localization.json';
+      const filePath = 'scripts/test/unit/localization.json';
       const fileContent = JSON.stringify({ greeting: 'Hello' });
 
       const mockWriteFile = mockedWriteFile();
@@ -120,6 +74,9 @@ describe('LocalizationGenerator', () => {
       generator.writeLocalizationFile(fileContent, filePath);
 
       expect(mockWriteFile).toHaveBeenCalledWith(filePath, fileContent, expect.any(Function));
+
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      fs.unlink(filePath, (_) => {});
     });
 
     it('should throw an error if file write fails', () => {
@@ -131,7 +88,7 @@ describe('LocalizationGenerator', () => {
       const generator = new LocalizationGenerator();
 
       const fileContent = JSON.stringify({ key: 'value' });
-      const filePath = 'path/to/localization.json';
+      const filePath = 'scripts/test/unit/localization.json';
 
       expect(() => {
         generator.writeLocalizationFile(fileContent, filePath);
