@@ -39,4 +39,4 @@ jobs:
         run: pnpm run lint:tsc
 
       - name: Run markdown linter
-        run: pnpm run lint:markdown
+        run: pnpm run lint:md
