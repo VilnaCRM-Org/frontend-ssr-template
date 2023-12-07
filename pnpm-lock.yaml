@@ -230,7 +230,6 @@ packages:
       '@graphql-typed-document-node/core': 3.2.0(graphql@16.8.1)
       '@wry/context': 0.7.3
       '@wry/equality': 0.5.6
-      '@wry/trie': 0.3.2
       '@wry/trie': 0.4.3
       graphql: 16.8.1
       graphql-tag: 2.12.6(graphql@16.8.1)
@@ -2829,7 +2828,6 @@ packages:
     dev: true
 
   /@graphql-typed-document-node/core@3.2.0(graphql@16.8.1):
-    resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
     resolution:
       {
         integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==,
