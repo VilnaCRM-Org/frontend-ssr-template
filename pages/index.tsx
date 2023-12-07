@@ -1,13 +1,12 @@
-import React from 'react';
 import Head from 'next/head';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 export default function Home() {
-  const {t} = useTranslation();
+  const { t} = useTranslation();
 
   const click = () => {
     setTimeout(() => {
-      console.log('done');
     }, 2000);
   };
 
