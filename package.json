@@ -10,7 +10,7 @@
     "storybook-start": "start-storybook -p 6006",
     "storybook-build": "build-storybook",
     "generate-ts-doc": "api-extractor run --local --verbose",
-    "format": "exec prettier . --write",
+    "format": "prettier . --write",
     "lint:next": "next lint",
     "lint:tsc": "tsc",
     "lint:md": "markdownlint -i CHANGELOG.md **/*.md",
