@@ -14,8 +14,8 @@ export default function Home() {
       <div>
         <Head>
           <html lang="en"/>
-          <title>Frontend Ssr template</title>
-          <meta name="description" content="Your description here"/>
+          <title>Frontend SSR template</title>
+          <meta name="description" content="Frontend SSR template is used for bootstrapping a project."/>
         </Head>
         <button type='button' onClick={click}>{t('hello')}</button>
       </div>
