@@ -17,6 +17,7 @@ export default function Home() {
           <title>Frontend SSR template</title>
           <meta name="description" content="Frontend SSR template is used for bootstrapping a project."/>
         </Head>
+        <h1>Frontend SSR template</h1>
         <button type='button' onClick={click}>{t('hello')}</button>
       </div>
   );
