@@ -6,6 +6,7 @@ export default function Home() {
 
   const click = () => {
     setTimeout(() => {
+      // eslint-disable-next-line no-console
       console.log('done');
     }, 2000);
   };
