@@ -7,13 +7,14 @@ export default function Home() {
 
   const click = () => {
     setTimeout(() => {
+      // eslint-disable-next-line no-console
+      console.log('done');
     }, 2000);
   };
 
   return (
       <div>
         <Head>
-          <html lang="en"/>
           <title>Frontend SSR template</title>
           <meta name="description" content="Frontend SSR template is used for bootstrapping a project."/>
         </Head>
