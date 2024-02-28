@@ -54,7 +54,7 @@ dependencies:
     specifier: ^12.3.1
     version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
   reflect-metadata:
-    specifier: ^0.2.1
+    specifier: ^0.2.0
     version: 0.2.1
   require-from-string:
     specifier: ^2.0.2
