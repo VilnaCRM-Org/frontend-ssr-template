@@ -54,8 +54,8 @@ dependencies:
     specifier: ^12.3.1
     version: 12.3.1(i18next@22.5.1)(react-dom@18.2.0)(react@18.2.0)
   reflect-metadata:
-    specifier: ^0.1.14
-    version: 0.1.14
+    specifier: ^0.2.1
+    version: 0.2.1
   require-from-string:
     specifier: ^2.0.2
     version: 2.0.2
@@ -14017,8 +14017,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /reflect-metadata@0.1.14:
-    resolution: {integrity: sha512-ZhYeb6nRaXCfhnndflDK8qI6ZQ/YcWZCISRAWICW9XYqMUwjZM9Z0DveWX/ABN01oxSHwVxKQmxeYZSsm0jh5A==}
+  /reflect-metadata@0.2.1:
+    resolution: {integrity: sha512-i5lLI6iw9AU3Uu4szRNPPEkomnkjRTaVt9hy/bn5g/oSzekBSMeLZblcjP74AW0vBabqERLLIrz+gR8QYR54Tw==}
     dev: false
 
   /reflect.getprototypeof@1.0.4:
