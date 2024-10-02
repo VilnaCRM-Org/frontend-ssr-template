@@ -7,7 +7,7 @@ on:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ${{ vars.UBUNTU_VERSION }}
+    runs-on: ${{ vars.UBUNTU_VERSION || 'ubuntu-latest' }}
     permissions:
       actions: read
       contents: read
