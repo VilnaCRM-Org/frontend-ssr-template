@@ -6,7 +6,7 @@ on:
 
 jobs:
   memory-leak-testing:
-    runs-on: ubuntu-latest
+    runs-on: {{ vars.UBUNTU_VERSION }}
 
     steps:
       - name: Checkout code
