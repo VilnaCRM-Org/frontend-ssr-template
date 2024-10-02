@@ -4,7 +4,7 @@ on:
     branches: ['main']
 jobs:
   static:
-    runs-on: {{ vars.UBUNTU_VERSION }}
+    runs-on: ${{ vars.UBUNTU_VERSION }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3

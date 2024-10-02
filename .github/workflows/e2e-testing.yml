@@ -6,7 +6,7 @@ on:
 
 jobs:
   e2e:
-    runs-on: {{ vars.UBUNTU_VERSION }}
+    runs-on: ${{ vars.UBUNTU_VERSION }}
 
     steps:
       - name: Checkout code
