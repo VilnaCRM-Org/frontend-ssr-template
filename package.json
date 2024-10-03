@@ -89,7 +89,7 @@
     "ts-jest": "^29.1.1",
     "typescript": "^4.9.5",
     "semver": "^7.5.4",
-    "memlab": "^1.1.42"
+    "memlab": "^1.1.55"
   },
   "engines": {
     "node": ">=20.0.0"
