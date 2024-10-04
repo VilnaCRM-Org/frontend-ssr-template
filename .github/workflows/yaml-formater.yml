@@ -6,6 +6,6 @@ on:
 
 jobs:
   yamlfmt:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.UBUNTU_VERSION || 'ubuntu-latest' }}
     steps:
       - uses: norwd/fmtya@v1

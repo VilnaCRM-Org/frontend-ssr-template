@@ -4,7 +4,7 @@ on:
     branches: ['main']
 jobs:
   static:
-    runs-on: ubuntu-latest
+    runs-on: ${{ vars.UBUNTU_VERSION || 'ubuntu-latest' }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
