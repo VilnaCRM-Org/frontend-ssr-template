@@ -1,6 +1,9 @@
+require('dotenv').config();
+
 module.exports = {
   ci: {
     collect: {
+      url: `${process.env.WEBSITE_URL}`,
       settings: {
         preset: 'desktop',
       },
