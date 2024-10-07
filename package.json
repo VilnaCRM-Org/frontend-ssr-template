@@ -51,7 +51,7 @@
     "@babel/core": "^7.25.7",
     "@commitlint/cli": "^17.8.1",
     "@commitlint/config-conventional": "^17.8.1",
-    "@lhci/cli": "^0.12.0",
+    "@lhci/cli": "^0.14.0",
     "@microsoft/api-extractor": "^7.47.9",
     "@next/eslint-plugin-next": "^13.5.7",
     "@storybook/addon-actions": "^8.3.5",
