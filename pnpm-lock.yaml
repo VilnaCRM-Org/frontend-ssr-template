@@ -151,8 +151,8 @@ importers:
         specifier: ^17.1.0
         version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5))(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1)
       eslint-config-next:
-        specifier: ^13.5.1
-        version: 13.5.7(eslint@8.57.1)(typescript@4.9.5)
+        specifier: ^14.2.14
+        version: 14.2.14(eslint@8.57.1)(typescript@4.9.5)
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.1)
@@ -1489,6 +1489,9 @@ packages:
 
   '@next/eslint-plugin-next@13.5.7':
     resolution: {integrity: sha512-c4vuEOOXeib4js5gDq+zFqAAdRGXX6T0d+zFETiQkRwy7vyj5lBov1dW0Z09nDst2lvxo7VEcKrQMUBH5Vgx7Q==}
+
+  '@next/eslint-plugin-next@14.2.14':
+    resolution: {integrity: sha512-kV+OsZ56xhj0rnTn6HegyTGkoa16Mxjrpk7pjWumyB2P8JVQb8S9qtkjy/ye0GnTr4JWtWG4x/2qN40lKZ3iVQ==}
 
   '@next/swc-darwin-arm64@13.5.7':
     resolution: {integrity: sha512-7SxmxMex45FvKtRoP18eftrDCMyL6WQVYJSEE/s7A1AW/fCkznxjEShKet2iVVzf89gWp8HbXGaL4hCaseux6g==}
@@ -3849,8 +3852,8 @@ packages:
       eslint-plugin-react: ^7.28.0
       eslint-plugin-react-hooks: ^4.3.0
 
-  eslint-config-next@13.5.7:
-    resolution: {integrity: sha512-pdeUuL9KZ8qFzzKqCbxk6FXwG9dNEnot/3+qSFJqxdSGgkFUH8cgZus/meyCi2S0cTAsDbBEE030E6zvL9pUYQ==}
+  eslint-config-next@14.2.14:
+    resolution: {integrity: sha512-TXwyjGICAlWC9O0OufS3koTsBKQH8l1xt3SY/aDuvtKHIwjTHplJKWVb1WOEX0OsDaxGbFXmfD2EY1sNfG0Y/w==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -3971,6 +3974,7 @@ packages:
   eslint@8.57.1:
     resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   espree@9.6.1:
@@ -4369,6 +4373,11 @@ packages:
 
   glob@10.2.7:
     resolution: {integrity: sha512-jTKehsravOJo8IJxUGfZILnkvVJM/MOfHRs8QcXolVef2zNI9Tqyy5+SeuOAZd3upViEZQLyFpQhYiHLrMUNmA==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    hasBin: true
+
+  glob@10.3.10:
+    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
 
@@ -8778,7 +8787,7 @@ snapshots:
       '@types/node': 20.5.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@4.9.5)
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5)
+      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@18.19.54)(typescript@4.9.5))(typescript@4.9.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -9534,6 +9543,10 @@ snapshots:
   '@next/eslint-plugin-next@13.5.7':
     dependencies:
       glob: 7.1.7
+
+  '@next/eslint-plugin-next@14.2.14':
+    dependencies:
+      glob: 10.3.10
 
   '@next/swc-darwin-arm64@13.5.7':
     optional: true
@@ -12053,7 +12066,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5):
+  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@18.19.54)(typescript@4.9.5))(typescript@4.9.5):
     dependencies:
       '@types/node': 20.5.1
       cosmiconfig: 8.3.6(typescript@4.9.5)
@@ -12743,10 +12756,11 @@ snapshots:
       object.assign: 4.1.5
       object.entries: 1.1.8
 
-  eslint-config-next@13.5.7(eslint@8.57.1)(typescript@4.9.5):
+  eslint-config-next@14.2.14(eslint@8.57.1)(typescript@4.9.5):
     dependencies:
-      '@next/eslint-plugin-next': 13.5.7
+      '@next/eslint-plugin-next': 14.2.14
       '@rushstack/eslint-patch': 1.10.4
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.1)(typescript@4.9.5)
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
@@ -13490,6 +13504,14 @@ snapshots:
   glob-to-regexp@0.4.1: {}
 
   glob@10.2.7:
+    dependencies:
+      foreground-child: 3.3.0
+      jackspeak: 2.3.6
+      minimatch: 9.0.5
+      minipass: 6.0.2
+      path-scurry: 1.11.1
+
+  glob@10.3.10:
     dependencies:
       foreground-child: 3.3.0
       jackspeak: 2.3.6
