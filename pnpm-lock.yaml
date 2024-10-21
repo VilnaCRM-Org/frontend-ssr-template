@@ -88,8 +88,8 @@ importers:
         specifier: ^0.14.0
         version: 0.14.0
       '@microsoft/api-extractor':
-        specifier: ^7.47.9
-        version: 7.47.9(@types/node@18.19.54)
+        specifier: ^7.47.11
+        version: 7.47.11(@types/node@18.19.54)
       '@next/eslint-plugin-next':
         specifier: ^13.5.7
         version: 13.5.7
@@ -151,20 +151,20 @@ importers:
         specifier: ^17.1.0
         version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5))(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1)
       eslint-config-next:
-        specifier: ^14.2.14
-        version: 14.2.14(eslint@8.57.1)(typescript@4.9.5)
+        specifier: ^14.2.15
+        version: 14.2.15(eslint@8.57.1)(typescript@4.9.5)
       eslint-config-prettier:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.1)
       eslint-plugin-cypress:
-        specifier: ^2.15.2
-        version: 2.15.2(eslint@8.57.1)
+        specifier: ^3.6.0
+        version: 3.6.0(eslint@8.57.1)
       eslint-plugin-import:
         specifier: ^2.31.0
         version: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       eslint-plugin-jest-dom:
-        specifier: ^4.0.3
-        version: 4.0.3(eslint@8.57.1)
+        specifier: ^5.4.0
+        version: 5.4.0(@testing-library/dom@8.20.1)(eslint@8.57.1)
       eslint-plugin-jsx-a11y:
         specifier: ^6.10.0
         version: 6.10.0(eslint@8.57.1)
@@ -181,8 +181,8 @@ importers:
         specifier: ^5.11.1
         version: 5.11.1(eslint@8.57.1)(typescript@4.9.5)
       husky:
-        specifier: ^8.0.3
-        version: 8.0.3
+        specifier: ^9.1.6
+        version: 9.1.6
       markdownlint-cli:
         specifier: ^0.42.0
         version: 0.42.0
@@ -1412,8 +1412,8 @@ packages:
   '@microsoft/api-extractor-model@7.29.8':
     resolution: {integrity: sha512-t3Z/xcO6TRbMcnKGVMs4uMzv/gd5j0NhMiJIGjD4cJMeFJ1Hf8wnLSx37vxlRlL0GWlGJhnFgxvnaL6JlS+73g==}
 
-  '@microsoft/api-extractor@7.47.9':
-    resolution: {integrity: sha512-TTq30M1rikVsO5wZVToQT/dGyJY7UXJmjiRtkHPLb74Prx3Etw8+bX7Bv7iLuby6ysb7fuu1NFWqma+csym8Jw==}
+  '@microsoft/api-extractor@7.47.11':
+    resolution: {integrity: sha512-lrudfbPub5wzBhymfFtgZKuBvXxoSIAdrvS2UbHjoMT2TjIEddq6Z13pcve7A03BAouw0x8sW8G4txdgfiSwpQ==}
     hasBin: true
 
   '@microsoft/tsdoc-config@0.17.0':
@@ -1508,8 +1508,8 @@ packages:
   '@next/eslint-plugin-next@13.5.7':
     resolution: {integrity: sha512-c4vuEOOXeib4js5gDq+zFqAAdRGXX6T0d+zFETiQkRwy7vyj5lBov1dW0Z09nDst2lvxo7VEcKrQMUBH5Vgx7Q==}
 
-  '@next/eslint-plugin-next@14.2.14':
-    resolution: {integrity: sha512-kV+OsZ56xhj0rnTn6HegyTGkoa16Mxjrpk7pjWumyB2P8JVQb8S9qtkjy/ye0GnTr4JWtWG4x/2qN40lKZ3iVQ==}
+  '@next/eslint-plugin-next@14.2.15':
+    resolution: {integrity: sha512-pKU0iqKRBlFB/ocOI1Ip2CkKePZpYpnw5bEItEkuZ/Nr9FQP1+p7VDWr4VfOdff4i9bFmrOaeaU1bFEyAcxiMQ==}
 
   '@next/swc-darwin-arm64@14.2.14':
     resolution: {integrity: sha512-bsxbSAUodM1cjYeA4o6y7sp9wslvwjSkWw57t8DtC8Zig8aG8V6r+Yc05/9mDzLKcybb6EN85k1rJDnMKBd9Gw==}
@@ -1824,8 +1824,8 @@ packages:
       '@types/node':
         optional: true
 
-  '@rushstack/ts-command-line@4.22.8':
-    resolution: {integrity: sha512-XbFjOoV7qZHJnSuFUHv0pKaFA4ixyCuki+xMjsMfDwfvQjs5MYG0IK5COal3tRnG7KCDe2l/G+9LrzYE/RJhgg==}
+  '@rushstack/ts-command-line@4.23.0':
+    resolution: {integrity: sha512-jYREBtsxduPV6ptNq8jOKp9+yx0ld1Tb/Tkdnlj8gTjazl1sF3DwX2VbluyYrNd0meWIL0bNeer7WDf5tKFjaQ==}
 
   '@sentry-internal/feedback@7.119.1':
     resolution: {integrity: sha512-EPyW6EKZmhKpw/OQUPRkTynXecZdYl4uhZwdZuGqnGMAzswPOgQvFrkwsOuPYvoMfXqCH7YuRqyJrox3uBOrTA==}
@@ -4076,8 +4076,8 @@ packages:
       eslint-plugin-react: ^7.28.0
       eslint-plugin-react-hooks: ^4.3.0
 
-  eslint-config-next@14.2.14:
-    resolution: {integrity: sha512-TXwyjGICAlWC9O0OufS3koTsBKQH8l1xt3SY/aDuvtKHIwjTHplJKWVb1WOEX0OsDaxGbFXmfD2EY1sNfG0Y/w==}
+  eslint-config-next@14.2.15:
+    resolution: {integrity: sha512-mKg+NC/8a4JKLZRIOBplxXNdStgxy7lzWuedUaCc8tev+Al9mwDUTujQH6W6qXDH9kycWiVo28tADWGvpBsZcQ==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -4128,10 +4128,10 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
 
-  eslint-plugin-cypress@2.15.2:
-    resolution: {integrity: sha512-CtcFEQTDKyftpI22FVGpx8bkpKyYXBlNge6zSo0pl5/qJvBAnzaD76Vu2AsP16d6mTj478Ldn2mhgrWV+Xr0vQ==}
+  eslint-plugin-cypress@3.6.0:
+    resolution: {integrity: sha512-7IAMcBbTVu5LpWeZRn5a9mQ30y4hKp3AfTz+6nSD/x/7YyLMoBI6X7XjDLYI6zFvuy4Q4QVGl563AGEXGW/aSA==}
     peerDependencies:
-      eslint: '>= 3.2.1'
+      eslint: '>=7'
 
   eslint-plugin-import@2.31.0:
     resolution: {integrity: sha512-ixmkI62Rbc2/w8Vfxyh1jQRTdRTF52VxwRVHl/ykPAmqG+Nb7/kNn+byLP0LxPgI7zWA16Jt82SybJInmMia3A==}
@@ -4143,11 +4143,15 @@ packages:
       '@typescript-eslint/parser':
         optional: true
 
-  eslint-plugin-jest-dom@4.0.3:
-    resolution: {integrity: sha512-9j+n8uj0+V0tmsoS7bYC7fLhQmIvjRqRYEcbDSi+TKPsTThLLXCyj5swMSSf/hTleeMktACnn+HFqXBr5gbcbA==}
+  eslint-plugin-jest-dom@5.4.0:
+    resolution: {integrity: sha512-yBqvFsnpS5Sybjoq61cJiUsenRkC9K32hYQBFS9doBR7nbQZZ5FyO+X7MlmfM1C48Ejx/qTuOCgukDUNyzKZ7A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6', yarn: '>=1'}
     peerDependencies:
-      eslint: ^6.8.0 || ^7.0.0 || ^8.0.0
+      '@testing-library/dom': ^8.0.0 || ^9.0.0 || ^10.0.0
+      eslint: ^6.8.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
+    peerDependenciesMeta:
+      '@testing-library/dom':
+        optional: true
 
   eslint-plugin-jsx-a11y@6.10.0:
     resolution: {integrity: sha512-ySOHvXX8eSN6zz8Bywacm7CvGNhUtdjvqfQDVe6020TUK34Cywkw7m0KsCCk1Qtm9G1FayfTN1/7mMYnYO2Bhg==}
@@ -4819,9 +4823,9 @@ packages:
     resolution: {integrity: sha512-B4FFZ6q/T2jhhksgkbEW3HBvWIfDW85snkQgawt07S7J5QXTk6BkNV+0yAeZrM5QpMAdYlocGoljn0sJ/WQkFw==}
     engines: {node: '>=10.17.0'}
 
-  husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
+  husky@9.1.6:
+    resolution: {integrity: sha512-sqbjZKK7kf44hfdE94EoX8MZNk0n7HeW37O4YrVGCF4wzgQjp+akPAkfUK5LZ6KuR/6sqeAVuXHji+RzQgOn5A==}
+    engines: {node: '>=18'}
     hasBin: true
 
   i18next@22.5.1:
@@ -5881,10 +5885,6 @@ packages:
 
   minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-
-  minipass@6.0.2:
-    resolution: {integrity: sha512-MzWSV5nYVT7mVyWCwn2o7JH13w2TBRmmSqSRCKzTw+lmft9X4z+3wjvs06Tzijo5z4W/kahUCDpRXTF+ZrmF/w==}
-    engines: {node: '>=16 || 14 >=14.17'}
 
   minipass@7.1.2:
     resolution: {integrity: sha512-qOOzS1cBTWYF4BH8fVePDBOO9iptMnGUEZwNc/cMWnTV2nVLZ7VoNWEPHkYczZA0pdoA7dl6e7FL659nX9S2aw==}
@@ -9683,7 +9683,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.47.9(@types/node@18.19.54)':
+  '@microsoft/api-extractor@7.47.11(@types/node@18.19.54)':
     dependencies:
       '@microsoft/api-extractor-model': 7.29.8(@types/node@18.19.54)
       '@microsoft/tsdoc': 0.15.0
@@ -9691,7 +9691,7 @@ snapshots:
       '@rushstack/node-core-library': 5.9.0(@types/node@18.19.54)
       '@rushstack/rig-package': 0.5.3
       '@rushstack/terminal': 0.14.2(@types/node@18.19.54)
-      '@rushstack/ts-command-line': 4.22.8(@types/node@18.19.54)
+      '@rushstack/ts-command-line': 4.23.0(@types/node@18.19.54)
       lodash: 4.17.21
       minimatch: 3.0.8
       resolve: 1.22.8
@@ -9793,7 +9793,7 @@ snapshots:
     dependencies:
       glob: 7.1.7
 
-  '@next/eslint-plugin-next@14.2.14':
+  '@next/eslint-plugin-next@14.2.15':
     dependencies:
       glob: 10.3.10
 
@@ -10156,7 +10156,7 @@ snapshots:
     optionalDependencies:
       '@types/node': 18.19.54
 
-  '@rushstack/ts-command-line@4.22.8(@types/node@18.19.54)':
+  '@rushstack/ts-command-line@4.23.0(@types/node@18.19.54)':
     dependencies:
       '@rushstack/terminal': 0.14.2(@types/node@18.19.54)
       '@types/argparse': 1.0.38
@@ -13311,9 +13311,9 @@ snapshots:
       object.assign: 4.1.5
       object.entries: 1.1.8
 
-  eslint-config-next@14.2.14(eslint@8.57.1)(typescript@4.9.5):
+  eslint-config-next@14.2.15(eslint@8.57.1)(typescript@4.9.5):
     dependencies:
-      '@next/eslint-plugin-next': 14.2.14
+      '@next/eslint-plugin-next': 14.2.15
       '@rushstack/eslint-patch': 1.10.4
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.1)(typescript@4.9.5)
@@ -13373,7 +13373,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-cypress@2.15.2(eslint@8.57.1):
+  eslint-plugin-cypress@3.6.0(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
       globals: 13.24.0
@@ -13407,12 +13407,13 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jest-dom@4.0.3(eslint@8.57.1):
+  eslint-plugin-jest-dom@5.4.0(@testing-library/dom@8.20.1)(eslint@8.57.1):
     dependencies:
       '@babel/runtime': 7.25.7
-      '@testing-library/dom': 8.20.1
       eslint: 8.57.1
       requireindex: 1.2.0
+    optionalDependencies:
+      '@testing-library/dom': 8.20.1
 
   eslint-plugin-jsx-a11y@6.10.0(eslint@8.57.1):
     dependencies:
@@ -14061,7 +14062,7 @@ snapshots:
       foreground-child: 3.3.0
       jackspeak: 2.3.6
       minimatch: 9.0.5
-      minipass: 6.0.2
+      minipass: 7.1.2
       path-scurry: 1.11.1
 
   glob@11.0.0:
@@ -14319,7 +14320,7 @@ snapshots:
 
   human-signals@2.1.0: {}
 
-  husky@8.0.3: {}
+  husky@9.1.6: {}
 
   i18next@22.5.1:
     dependencies:
@@ -15606,8 +15607,6 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minipass@6.0.2: {}
-
   minipass@7.1.2: {}
 
   mississippi@3.0.0:
@@ -16027,7 +16026,7 @@ snapshots:
   path-scurry@1.11.1:
     dependencies:
       lru-cache: 10.4.3
-      minipass: 6.0.2
+      minipass: 7.1.2
 
   path-scurry@2.0.0:
     dependencies:
