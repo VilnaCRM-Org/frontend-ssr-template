@@ -6,12 +6,8 @@ import 'dotenv/config';
 
 Sentry.init({
   dsn: process.env.SENTRY_DSN_KEY,
-  integrations: [
-    new Sentry.BrowserTracing({
-      tracePropagationTargets: [process.env.LOCALHOST, /^https:\/\/yourserver\.io\/api/],
-    }),
-    new Sentry.Replay(),
-  ],
+  integrations: [Sentry.browserTracingIntegration(), Sentry.replayIntegration()],
+  tracePropagationTargets: [process.env.LOCALHOST, /^https:\/\/yourserver\.io\/api/],
   tracesSampleRate: 1.0,
   replaysSessionSampleRate: 0.1,
   replaysOnErrorSampleRate: 1.0,
