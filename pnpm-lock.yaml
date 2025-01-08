@@ -65,6 +65,9 @@ importers:
       storybook:
         specifier: ^8.3.5
         version: 8.3.5
+      terser-webpack-plugin:
+        specifier: ^5.3.11
+        version: 5.3.11(esbuild@0.23.1)(webpack@5.96.1(esbuild@0.23.1))
       tsyringe:
         specifier: ^4.8.0
         version: 4.8.0
@@ -18068,7 +18071,7 @@ snapshots:
       memfs: 3.5.3
       mime-types: 2.1.35
       range-parser: 1.2.1
-      schema-utils: 4.2.0
+      schema-utils: 4.3.0
     optionalDependencies:
       webpack: 5.96.1(esbuild@0.23.1)
 
