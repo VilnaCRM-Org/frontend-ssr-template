@@ -16,6 +16,7 @@ const nextConfig = {
     const localizationGenerator = new LocalizationGenerator();
     localizationGenerator.generateLocalizationFile();
 
+    const isServer = typeof window === 'undefined';
     if (!isServer) {
       config.optimization.minimizer.push(
         new TerserPlugin({
