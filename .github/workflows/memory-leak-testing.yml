@@ -4,12 +4,6 @@ on:
   pull_request:
     branches: ['main']
 
-name: memory leak testing
-
-on:
-  pull_request:
-    branches: ['main']
-
 jobs:
   memory-leak-testing:
     runs-on: ubuntu-latest
