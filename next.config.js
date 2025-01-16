@@ -7,9 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  experimental: {
-    serverComponents: true,  
-  },
+  
   webpack: (config) => {
     const localizationGenerator = new LocalizationGenerator();
     localizationGenerator.generateLocalizationFile();
