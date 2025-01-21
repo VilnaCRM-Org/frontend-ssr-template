@@ -4,10 +4,10 @@ const LocalizationGenerator = require('./scripts/localizationGenerator');
 const nextConfig = {
   output: 'export',
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     unoptimized: true,
   },
+  
   webpack: (config) => {
     const localizationGenerator = new LocalizationGenerator();
     localizationGenerator.generateLocalizationFile();
