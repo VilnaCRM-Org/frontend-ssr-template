@@ -146,10 +146,10 @@ importers:
         version: 8.57.1
       eslint-config-airbnb:
         specifier: ^19.0.4
-        version: 19.0.4(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.10.0(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.1(eslint@8.57.1))(eslint@8.57.1)
+        version: 19.0.4(eslint-plugin-import@2.31.0)(eslint-plugin-jsx-a11y@6.10.0(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.1(eslint@8.57.1))(eslint@8.57.1)
       eslint-config-airbnb-typescript:
         specifier: ^17.1.0
-        version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5))(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1)
+        version: 17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5))(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-plugin-import@2.31.0)(eslint@8.57.1)
       eslint-config-next:
         specifier: ^15.0.1
         version: 15.0.1(eslint@8.57.1)(typescript@4.9.5)
@@ -187,8 +187,8 @@ importers:
         specifier: ^0.42.0
         version: 0.42.0
       memlab:
-        specifier: ^1.1.55
-        version: 1.1.55(typescript@4.9.5)
+        specifier: ^1.1.56
+        version: 1.1.56(typescript@4.9.5)
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -1451,22 +1451,22 @@ packages:
       '@types/react': '>=16'
       react: '>=16'
 
-  '@memlab/api@1.0.37':
-    resolution: {integrity: sha512-x5Wg+eFIL7SQMcdVMcJB+GCIb0ePQ3kdJmzj2P6KJZkHsy/LtKyrSbZ/9xNTjkgw/pfQJuBtxKdrqyoanvb3BA==}
+  '@memlab/api@1.0.38':
+    resolution: {integrity: sha512-NXDtdy8r/K6XwX+5L2teqaMv++36tVt0NrU8J3yL3hC4yvTDino0N6DLRV+pgo6yOmwQd7gRrPXS9AS7QKLiyw==}
 
-  '@memlab/cli@1.0.40':
-    resolution: {integrity: sha512-LVfHYnLQQXE4N5XdOZuYYIRp5+nwdfbdDUIZyT4P4KP17yWJZAjqJKMm/NFACth8BOtmSBZLICTuXpWD9Xn0aA==}
+  '@memlab/cli@1.0.41':
+    resolution: {integrity: sha512-u6/J32QtZ1YNLc4qfXj2A55vc2FSTlUeToIWXRdFB6MGcZOz+b+xfOMZj7pzed0PFbFoCMAB9cxWDSP660VI8A==}
     hasBin: true
 
-  '@memlab/core@1.1.38':
-    resolution: {integrity: sha512-1jBq6VtW851WFUtL7qlR7P5LLd8VzFbWPv4hM6dWF9tNM/wnGGPHIYcOM6PS/9UTQJ9qnWA3yk+IxGLZWwLj5w==}
+  '@memlab/core@1.1.39':
+    resolution: {integrity: sha512-pm86BgLs+6WlAhT3M89LJh7SHcjIc87GsVMmCbyy2Fh2L6yAlnp8odJghg+GrA6y5yToFkDMhg+DFDXexEFctQ==}
     engines: {node: '>= 12.6.0'}
 
-  '@memlab/e2e@1.0.38':
-    resolution: {integrity: sha512-f7m17dXscE16y2MhgAycoKZiQ05EkLrOoS29bdMJ2K2ZDUgo3rYX0aNh6dTAV/8mGuJJ9Ir2zMhSXvUgjibPHA==}
+  '@memlab/e2e@1.0.39':
+    resolution: {integrity: sha512-KQTiOcWRwksHGt4fJeatWnPBM/NunZI4aClZFy86mvg0wObymtPUg64mZ4mRLs7CJNrponPMuXfnXlqNG9XGdg==}
 
-  '@memlab/heap-analysis@1.0.35':
-    resolution: {integrity: sha512-3UfSMXffcQgSfyVluXGUAS1pgp8NZRqdMTvuzcPQhssHKzZSmjFmbFNWL0L63N/oF3ivrElYUyuhpPmtc+56Zg==}
+  '@memlab/heap-analysis@1.0.36':
+    resolution: {integrity: sha512-wa2aTbWItytq9qdYF+n0rJ8yRpoadiC4NO4epvfqhPVMFYk3Uf+Zj+0hyH7IAHzoNaXX0KN6vPGuSvf6wliR0A==}
 
   '@microsoft/api-extractor-model@7.29.8':
     resolution: {integrity: sha512-t3Z/xcO6TRbMcnKGVMs4uMzv/gd5j0NhMiJIGjD4cJMeFJ1Hf8wnLSx37vxlRlL0GWlGJhnFgxvnaL6JlS+73g==}
@@ -5837,8 +5837,8 @@ packages:
     resolution: {integrity: sha512-UERzLsxzllchadvbPs5aolHh65ISpKpM+ccLbOJ8/vvpBKmAWf+la7dXFy7Mr0ySHbdHrFv5kGFCUHHe6GFEmw==}
     engines: {node: '>= 4.0.0'}
 
-  memlab@1.1.55:
-    resolution: {integrity: sha512-OoOQYqsf7liyPeADNpsYg+thZkn4YwoffUM+u0M1ONLfumjuxraQvP1yiruPJ6+d2Z30KJysaSelg7jSoX9hNw==}
+  memlab@1.1.56:
+    resolution: {integrity: sha512-n1QTWz5G69uF0iGNub18cQ0Pq2+5ojpM6htj70lPg2vlt4GWPAXjD2nESkkxreL+TRz3knQ6dpwGrOu1euoDzQ==}
     engines: {node: 18.x || 19.x || 20.x, npm: 7.x || 8.x || 9.x || 10.x}
     hasBin: true
 
@@ -9138,7 +9138,7 @@ snapshots:
       '@types/node': 20.5.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@4.9.5)
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@18.19.54)(typescript@4.9.5))(typescript@4.9.5)
+      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -9696,11 +9696,11 @@ snapshots:
       '@types/react': 18.3.11
       react: 18.3.1
 
-  '@memlab/api@1.0.37(typescript@4.9.5)':
+  '@memlab/api@1.0.38(typescript@4.9.5)':
     dependencies:
-      '@memlab/core': 1.1.38(typescript@4.9.5)
-      '@memlab/e2e': 1.0.38(typescript@4.9.5)
-      '@memlab/heap-analysis': 1.0.35(typescript@4.9.5)
+      '@memlab/core': 1.1.39(typescript@4.9.5)
+      '@memlab/e2e': 1.0.39(typescript@4.9.5)
+      '@memlab/heap-analysis': 1.0.36(typescript@4.9.5)
       ansi: 0.3.1
       babar: 0.2.3
       chalk: 4.1.2
@@ -9717,12 +9717,12 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@memlab/cli@1.0.40(typescript@4.9.5)':
+  '@memlab/cli@1.0.41(typescript@4.9.5)':
     dependencies:
-      '@memlab/api': 1.0.37(typescript@4.9.5)
-      '@memlab/core': 1.1.38(typescript@4.9.5)
-      '@memlab/e2e': 1.0.38(typescript@4.9.5)
-      '@memlab/heap-analysis': 1.0.35(typescript@4.9.5)
+      '@memlab/api': 1.0.38(typescript@4.9.5)
+      '@memlab/core': 1.1.39(typescript@4.9.5)
+      '@memlab/e2e': 1.0.39(typescript@4.9.5)
+      '@memlab/heap-analysis': 1.0.36(typescript@4.9.5)
       ansi: 0.3.1
       babar: 0.2.3
       blessed: 0.1.81
@@ -9740,7 +9740,7 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@memlab/core@1.1.38(typescript@4.9.5)':
+  '@memlab/core@1.1.39(typescript@4.9.5)':
     dependencies:
       ansi: 0.3.1
       babar: 0.2.3
@@ -9758,13 +9758,13 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@memlab/e2e@1.0.38(typescript@4.9.5)':
+  '@memlab/e2e@1.0.39(typescript@4.9.5)':
     dependencies:
-      '@babel/generator': 7.25.7
-      '@babel/parser': 7.25.7
-      '@babel/template': 7.25.7
-      '@babel/traverse': 7.25.7
-      '@memlab/core': 1.1.38(typescript@4.9.5)
+      '@babel/generator': 7.26.0
+      '@babel/parser': 7.26.1
+      '@babel/template': 7.25.9
+      '@babel/traverse': 7.25.9
+      '@memlab/core': 1.1.39(typescript@4.9.5)
       ansi: 0.3.1
       babar: 0.2.3
       chalk: 4.1.2
@@ -9781,10 +9781,10 @@ snapshots:
       - typescript
       - utf-8-validate
 
-  '@memlab/heap-analysis@1.0.35(typescript@4.9.5)':
+  '@memlab/heap-analysis@1.0.36(typescript@4.9.5)':
     dependencies:
-      '@memlab/core': 1.1.38(typescript@4.9.5)
-      '@memlab/e2e': 1.0.38(typescript@4.9.5)
+      '@memlab/core': 1.1.39(typescript@4.9.5)
+      '@memlab/e2e': 1.0.39(typescript@4.9.5)
       ansi: 0.3.1
       babar: 0.2.3
       chalk: 4.1.2
@@ -12789,7 +12789,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@18.19.54)(typescript@4.9.5))(typescript@4.9.5):
+  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5):
     dependencies:
       '@types/node': 20.5.1
       cosmiconfig: 8.3.6(typescript@4.9.5)
@@ -13438,7 +13438,7 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
-  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-config-airbnb-base@15.0.0(eslint-plugin-import@2.31.0)(eslint@8.57.1):
     dependencies:
       confusing-browser-globals: 1.0.11
       eslint: 8.57.1
@@ -13447,18 +13447,18 @@ snapshots:
       object.entries: 1.1.8
       semver: 6.3.1
 
-  eslint-config-airbnb-typescript@17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5))(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1):
+  eslint-config-airbnb-typescript@17.1.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5))(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-plugin-import@2.31.0)(eslint@8.57.1):
     dependencies:
       '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1)(typescript@4.9.5)
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.1)(typescript@4.9.5)
       eslint: 8.57.1
-      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.31.0)(eslint@8.57.1)
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
 
-  eslint-config-airbnb@19.0.4(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.10.0(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.1(eslint@8.57.1))(eslint@8.57.1):
+  eslint-config-airbnb@19.0.4(eslint-plugin-import@2.31.0)(eslint-plugin-jsx-a11y@6.10.0(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.1(eslint@8.57.1))(eslint@8.57.1):
     dependencies:
       eslint: 8.57.1
-      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint@8.57.1))(eslint@8.57.1)
+      eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.31.0)(eslint@8.57.1)
       eslint-plugin-import: 2.31.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       eslint-plugin-jsx-a11y: 6.10.0(eslint@8.57.1)
       eslint-plugin-react: 7.37.1(eslint@8.57.1)
@@ -13504,7 +13504,7 @@ snapshots:
       debug: 4.3.7(supports-color@8.1.1)
       enhanced-resolve: 5.17.1
       eslint: 8.57.1
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.1
       is-bun-module: 1.2.1
@@ -13517,7 +13517,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1):
+  eslint-module-utils@2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1):
     dependencies:
       debug: 3.2.7(supports-color@8.1.1)
     optionalDependencies:
@@ -13544,7 +13544,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.57.1
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.31.0)(eslint@8.57.1))(eslint@8.57.1)
+      eslint-module-utils: 2.12.0(@typescript-eslint/parser@5.62.0(eslint@8.57.1)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -15601,13 +15601,13 @@ snapshots:
     dependencies:
       fs-monkey: 1.0.6
 
-  memlab@1.1.55(typescript@4.9.5):
+  memlab@1.1.56(typescript@4.9.5):
     dependencies:
-      '@memlab/api': 1.0.37(typescript@4.9.5)
-      '@memlab/cli': 1.0.40(typescript@4.9.5)
-      '@memlab/core': 1.1.38(typescript@4.9.5)
-      '@memlab/e2e': 1.0.38(typescript@4.9.5)
-      '@memlab/heap-analysis': 1.0.35(typescript@4.9.5)
+      '@memlab/api': 1.0.38(typescript@4.9.5)
+      '@memlab/cli': 1.0.41(typescript@4.9.5)
+      '@memlab/core': 1.1.39(typescript@4.9.5)
+      '@memlab/e2e': 1.0.39(typescript@4.9.5)
+      '@memlab/heap-analysis': 1.0.36(typescript@4.9.5)
       ansi: 0.3.1
       babar: 0.2.3
       chalk: 4.1.2
