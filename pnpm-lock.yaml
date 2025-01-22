@@ -38,9 +38,6 @@ importers:
       i18next:
         specifier: ^22.5.1
         version: 22.5.1
-      is-arrayish:
-        specifier: 0.3.2
-        version: 0.3.2
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.10.7)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.10.7)(typescript@4.9.5))
@@ -74,9 +71,6 @@ importers:
       tsyringe:
         specifier: ^4.8.0
         version: 4.8.0
-      undici-types:
-        specifier: 6.20.0
-        version: 6.20.0
       web-vitals:
         specifier: ^4.2.4
         version: 4.2.4
@@ -8991,7 +8985,7 @@ snapshots:
       '@types/node': 20.5.1
       chalk: 4.1.2
       cosmiconfig: 8.3.6(typescript@4.9.5)
-      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5)
+      cosmiconfig-typescript-loader: 4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@22.10.7)(typescript@4.9.5))(typescript@4.9.5)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -12599,7 +12593,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@20.5.1)(typescript@4.9.5))(typescript@4.9.5):
+  cosmiconfig-typescript-loader@4.4.0(@types/node@20.5.1)(cosmiconfig@8.3.6(typescript@4.9.5))(ts-node@10.9.2(@types/node@22.10.7)(typescript@4.9.5))(typescript@4.9.5):
     dependencies:
       '@types/node': 20.5.1
       cosmiconfig: 8.3.6(typescript@4.9.5)
@@ -14403,7 +14397,8 @@ snapshots:
 
   is-arrayish@0.2.1: {}
 
-  is-arrayish@0.3.2: {}
+  is-arrayish@0.3.2:
+    optional: true
 
   is-async-function@2.1.0:
     dependencies:
