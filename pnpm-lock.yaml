@@ -36,8 +36,8 @@ importers:
         specifier: ^16.10.0
         version: 16.10.0
       i18next:
-        specifier: ^23.16.8
-        version: 23.16.8
+        specifier: ^24.2.2
+        version: 24.2.2(typescript@5.7.3)
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.13.0)(babel-plugin-macros@3.1.0)(ts-node@10.9.2(@types/node@22.13.0)(typescript@5.7.3))
@@ -55,7 +55,7 @@ importers:
         version: 18.3.1(react@18.3.1)
       react-i18next:
         specifier: ^12.3.1
-        version: 12.3.1(i18next@23.16.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        version: 12.3.1(i18next@24.2.2(typescript@5.7.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -85,8 +85,8 @@ importers:
         specifier: ^17.8.1
         version: 17.8.1
       '@commitlint/config-conventional':
-        specifier: ^18.6.3
-        version: 18.6.3
+        specifier: ^19.7.1
+        version: 19.7.1
       '@lhci/cli':
         specifier: ^0.14.0
         version: 0.14.0
@@ -932,8 +932,8 @@ packages:
     engines: {node: '>=v14'}
     hasBin: true
 
-  '@commitlint/config-conventional@18.6.3':
-    resolution: {integrity: sha512-8ZrRHqF6je+TRaFoJVwszwnOXb/VeYrPmTwPhf0WxpzpGTcYy1p0SPyZ2eRn/sRi/obnWAcobtDAq6+gJQQNhQ==}
+  '@commitlint/config-conventional@19.7.1':
+    resolution: {integrity: sha512-fsEIF8zgiI/FIWSnykdQNj/0JE4av08MudLTyYHm4FlLWemKoQvPNUYU2M/3tktWcCEyq7aOkDDgtjrmgWFbvg==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@17.8.1':
@@ -996,8 +996,8 @@ packages:
     resolution: {integrity: sha512-PXDQXkAmiMEG162Bqdh9ChML/GJZo6vU+7F03ALKDK8zYc6SuAr47LjG7hGYRqUOz+WK0dU7bQ0xzuqFMdxzeQ==}
     engines: {node: '>=v14'}
 
-  '@commitlint/types@18.6.1':
-    resolution: {integrity: sha512-gwRLBLra/Dozj2OywopeuHj2ac26gjGkz2cZ+86cTJOdtWfiRRr4+e77ZDAGc6MDWxaWheI+mAV5TLWWRwqrFg==}
+  '@commitlint/types@19.5.0':
+    resolution: {integrity: sha512-DSHae2obMSMkAtTBSOulg5X7/z+rGLxcXQIkg3OmWvY6wifojge5uVMydfhUvs7yQj+V7jNmRZ2Xzl8GJyqRgg==}
     engines: {node: '>=v18'}
 
   '@cspotcode/source-map-support@0.8.1':
@@ -2372,6 +2372,9 @@ packages:
   '@types/connect@3.4.36':
     resolution: {integrity: sha512-P63Zd/JUGq+PdrM1lv0Wv5SBYeA2+CORvbrXbngriYY0jzLUWfQMQQxOhjONEz/wlHOAxOdY7CY65rgQdTjq2w==}
 
+  '@types/conventional-commits-parser@5.0.1':
+    resolution: {integrity: sha512-7uz5EHdzz2TqoMfV7ee61Egf5y6NkcO4FB/1iCCQnbeiI1F3xzv3vK5dBCXUCLQgGYS+mUeigK1iKQzvED+QnQ==}
+
   '@types/debug@4.1.12':
     resolution: {integrity: sha512-vIChWdVG3LG1SMxEvI/AK+FWJthlrqlTu7fbrlywTkkaONwk/UAGaULXRlf8vkzFBLVm0zkMdCquhL5aOjhXPQ==}
 
@@ -3363,6 +3366,10 @@ packages:
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
     engines: {node: '>=10'}
+
+  chalk@5.4.1:
+    resolution: {integrity: sha512-zgVZuo2WcZgfUEmsn6eO3kINexW8RAE4maiQ8QNs8CtpPCSyMiYsULR3HQYkm3w8FIA3SberyMJMSldGsW+U3w==}
+    engines: {node: ^12.17.0 || ^14.13 || >=16.0.0}
 
   char-regex@1.0.2:
     resolution: {integrity: sha512-kWWXztvZ5SBQV+eRgKFeh8q5sLuZY2+8WUIzlxWVTg+oGwY14qylx1KbKzHd8P6ZYkAg0xyIDU9JMHhyJMZ1jw==}
@@ -4915,8 +4922,13 @@ packages:
     engines: {node: '>=18'}
     hasBin: true
 
-  i18next@23.16.8:
-    resolution: {integrity: sha512-06r/TitrM88Mg5FdUXAKL96dJMzgqLE5dv3ryBAra4KCwD9mJ4ndOTS95ZuymIGoE+2hzfdaMak2X11/es7ZWg==}
+  i18next@24.2.2:
+    resolution: {integrity: sha512-NE6i86lBCKRYZa5TaUDkU5S4HFgLIEJRLr3Whf2psgaxBleQ2LC1YW1Vc+SCgkAW7VEzndT6al6+CzegSUHcTQ==}
+    peerDependencies:
+      typescript: ^5
+    peerDependenciesMeta:
+      typescript:
+        optional: true
 
   iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
@@ -9045,9 +9057,9 @@ snapshots:
       - '@swc/core'
       - '@swc/wasm'
 
-  '@commitlint/config-conventional@18.6.3':
+  '@commitlint/config-conventional@19.7.1':
     dependencies:
-      '@commitlint/types': 18.6.1
+      '@commitlint/types': 19.5.0
       conventional-changelog-conventionalcommits: 7.0.2
 
   '@commitlint/config-validator@17.8.1':
@@ -9146,9 +9158,10 @@ snapshots:
     dependencies:
       chalk: 4.1.2
 
-  '@commitlint/types@18.6.1':
+  '@commitlint/types@19.5.0':
     dependencies:
-      chalk: 4.1.2
+      '@types/conventional-commits-parser': 5.0.1
+      chalk: 5.4.1
 
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
@@ -11190,6 +11203,10 @@ snapshots:
     dependencies:
       '@types/node': 22.13.0
 
+  '@types/conventional-commits-parser@5.0.1':
+    dependencies:
+      '@types/node': 22.13.0
+
   '@types/debug@4.1.12':
     dependencies:
       '@types/ms': 2.1.0
@@ -12417,6 +12434,8 @@ snapshots:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  chalk@5.4.1: {}
 
   char-regex@1.0.2: {}
 
@@ -14408,9 +14427,11 @@ snapshots:
 
   husky@9.1.7: {}
 
-  i18next@23.16.8:
+  i18next@24.2.2(typescript@5.7.3):
     dependencies:
       '@babel/runtime': 7.26.7
+    optionalDependencies:
+      typescript: 5.7.3
 
   iconv-lite@0.4.24:
     dependencies:
@@ -16618,11 +16639,11 @@ snapshots:
       react: 18.3.1
       scheduler: 0.23.2
 
-  react-i18next@12.3.1(i18next@23.16.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  react-i18next@12.3.1(i18next@24.2.2(typescript@5.7.3))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.26.7
       html-parse-stringify: 3.0.1
-      i18next: 23.16.8
+      i18next: 24.2.2(typescript@5.7.3)
       react: 18.3.1
     optionalDependencies:
       react-dom: 18.3.1(react@18.3.1)
