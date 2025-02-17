@@ -29,7 +29,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.3",
     "@sentry/node": "^8.54.0",
-    "@sentry/react": "^8.54.0",
+    "@sentry/react": "^9.1.0",
     "dotenv": "^16.4.7",
     "graphql": "^16.10.0",
     "i18next": "^24.2.2",
