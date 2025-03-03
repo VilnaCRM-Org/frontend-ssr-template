@@ -94,8 +94,8 @@ importers:
         specifier: ^15.1.7
         version: 15.1.7
       '@storybook/addon-actions':
-        specifier: ^8.5.8
-        version: 8.5.8(storybook@8.6.0(prettier@3.5.2))
+        specifier: ^8.6.0
+        version: 8.6.0(storybook@8.6.0(prettier@3.5.2))
       '@storybook/addon-essentials':
         specifier: ^8.5.8
         version: 8.5.8(@types/react@18.3.18)(storybook@8.6.0(prettier@3.5.2))
@@ -2011,6 +2011,11 @@ packages:
     resolution: {integrity: sha512-7J0NAz+WDw1NmvmKIh0Qr5cxgVRDPFC5fmngbDNxedk147TkwrgmqOypgEi/SAksHbTWxJclbimoqdcsNtWffA==}
     peerDependencies:
       storybook: ^8.5.8
+
+  '@storybook/addon-actions@8.6.0':
+    resolution: {integrity: sha512-lI03stcI28wN8trjp7zx0PzN1NRxSpU/551slzEhSM0tghcLxcfLZR/wh4Jp0T68Obj7z//YXPttZ9PBFajs6w==}
+    peerDependencies:
+      storybook: ^8.6.0
 
   '@storybook/addon-backgrounds@8.5.8':
     resolution: {integrity: sha512-TsQFagQ95+d7H3/+qUZKI2B0SEK8iu6CV13cyry9Dm59nn2bBylFrwx4I3xDQUOWMiSF6QIRjCYzxKQ/jJ5OEg==}
@@ -10183,6 +10188,15 @@ snapshots:
       '@sinonjs/commons': 3.0.1
 
   '@storybook/addon-actions@8.5.8(storybook@8.6.0(prettier@3.5.2))':
+    dependencies:
+      '@storybook/global': 5.0.0
+      '@types/uuid': 9.0.8
+      dequal: 2.0.3
+      polished: 4.3.1
+      storybook: 8.6.0(prettier@3.5.2)
+      uuid: 9.0.1
+
+  '@storybook/addon-actions@8.6.0(storybook@8.6.0(prettier@3.5.2))':
     dependencies:
       '@storybook/global': 5.0.0
       '@types/uuid': 9.0.8
