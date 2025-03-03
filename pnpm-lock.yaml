@@ -88,8 +88,8 @@ importers:
         specifier: ^0.14.0
         version: 0.14.0
       '@microsoft/api-extractor':
-        specifier: ^7.50.1
-        version: 7.50.1(@types/node@22.13.5)
+        specifier: ^7.51.1
+        version: 7.51.1(@types/node@22.13.5)
       '@next/eslint-plugin-next':
         specifier: ^15.1.7
         version: 15.1.7
@@ -1495,8 +1495,8 @@ packages:
   '@microsoft/api-extractor-model@7.30.3':
     resolution: {integrity: sha512-yEAvq0F78MmStXdqz9TTT4PZ05Xu5R8nqgwI5xmUmQjWBQ9E6R2n8HB/iZMRciG4rf9iwI2mtuQwIzDXBvHn1w==}
 
-  '@microsoft/api-extractor@7.50.1':
-    resolution: {integrity: sha512-L18vz0ARLNaBLKwWe0DdEf7eijDsb7ERZspgZK7PxclLoQrc+9hJZo8y4OVfCHxNVyxlwVywY2WdE/3pOFViLQ==}
+  '@microsoft/api-extractor@7.51.1':
+    resolution: {integrity: sha512-VoFvIeYXme8QctXDkixy1KIn750kZaFy2snAEOB3nhDFfbBcJNEcvBrpCIQIV09MqI4g9egKUkg+/12WMRC77w==}
     hasBin: true
 
   '@microsoft/tsdoc-config@0.17.1':
@@ -9537,7 +9537,7 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@microsoft/api-extractor@7.50.1(@types/node@22.13.5)':
+  '@microsoft/api-extractor@7.51.1(@types/node@22.13.5)':
     dependencies:
       '@microsoft/api-extractor-model': 7.30.3(@types/node@22.13.5)
       '@microsoft/tsdoc': 0.15.1
