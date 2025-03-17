@@ -28,7 +28,7 @@
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.7",
-    "@sentry/node": "^9.5.0",
+    "@sentry/node": "^9.6.0",
     "@sentry/react": "^9.6.0",
     "dotenv": "^16.4.7",
     "graphql": "^16.10.0",
