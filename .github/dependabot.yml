@@ -4,3 +4,16 @@ updates:
     directory: '/'
     schedule:
       interval: 'weekly'
+    reviewers:
+      - 'Kravalg'
+    groups:
+      all-deps:
+        patterns:
+          - '*'
+    commit-message:
+      prefix: 'feat'
+      prefix-development: 'chore'
+      include: 'scope'
+    
+
+    
