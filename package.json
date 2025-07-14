@@ -45,7 +45,7 @@
     "terser-webpack-plugin": "^5.3.14",
     "tsyringe": "^4.10.0",
     "web-vitals": "^4.2.4",
-    "webpack": "^5.99.7"
+    "webpack": "^5.100.1"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
